@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- title -->
+        <title>Train Scheduler</title>
+        <!-- css style sheet and rest -->
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <!-- firebase link -->
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.1.1/firebase.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <!-- bootstrap link -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <!-- moment.js link -->
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+    
+    </head>
+    <body>
+        <!-- header -->
+        <div class="container">
+            <div class="jumbotron header">
+                <h1>Train Schedule made by Tamila</h1>
+            </div>
+        </div>
+        <!-- body container -->
+        <div class="container">
+            <!-- train schedule -->
+            <div class="panel panel-default">
+                <div class="panel-heading panel-custom">
+                    Current Train Schedule
+                </div>
+                <table class="table table-hover">
+                    <tr>
+                        <th scoop="col">Train Name</th>
+                        <th scoop="col">Destination</th>
+                        <th scoop="col">Frequency (min)</th>
+                        <th scoop="col">Minutes Away</th>
+                        <th scoop="col">Next Arival</th>
+                    </tr>
+                    <tbody id="table-data"></tbody>
+                </table>
+                <br>
+            </div>
+            <!-- Add train -->
+            <div class="panel panel-default">
+                <div class="panel-heading panel-custom">
+                    Add Train 
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <!-- train name -->
+                        <div class="form-group"> 
+                            <label for="trainName">&#10000; Train Name</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <!-- train destination -->
+                        <div class="form-group">
+                                <label for="destination">&#10000; Destination</label>
+                                <input type="text" class="form-control" id="destination" required>
+                        </div>
+                        <!-- train first arrival time -->
+                        <div class="form-group">
+                                <label for="Start">&#10000; First Train Time (HH:mm)</label>
+                                <input type="text" class="form-control" id="time" required>
+                        </div>
+                        <!-- train frequncy, how often the train will come -->
+                        <div class="form-group">
+                                <label for="Frequency">&#10000; Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequency" required>
+                        </div>
+                        <!-- submit button -->
+                        <div cladd="btn-group" role="group">
+                            <button type="button" id="btn-add" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span>Submit</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- js -->
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>

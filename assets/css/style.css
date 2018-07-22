@@ -1,0 +1,34 @@
+body {
+    background: lightgoldenrodyellow;
+}
+
+.header {
+    text-align: center;
+    color: #003153;
+    background: #EEB422;
+    font-weight: bold;
+}
+
+.panel-heading {
+    color: #EEB422;
+    background: #003153;
+    font-weight:bold;
+    padding: 1%;
+}
+
+tr {
+    color: #003153;
+    font-weight: bold;
+}
+
+.form-group {
+    color: #003153;
+    background: #F0E68C;
+    font-weight:bold;
+    padding: 1%;
+    margin-top: 1%
+}
+ 
+.btn {
+    margin-bottom: 5%;
+}
