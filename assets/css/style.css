@@ -1,15 +1,13 @@
 body {
-    background: lightgoldenrodyellow;
+	background-image: url(../images/train-station.jpg);
+	text-align: center;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.header {
-    text-align: center;
-    color: #003153;
-    background: #EEB422;
-    font-weight: bold;
-}
-
-.panel-heading {
+panel-heading {
     color: #EEB422;
     background: #003153;
     font-weight:bold;
@@ -23,12 +21,18 @@ tr {
 
 .form-group {
     color: #003153;
-    background: #F0E68C;
+    background: #EEB422;
     font-weight:bold;
     padding: 1%;
     margin-top: 1%
 }
- 
-.btn {
-    margin-bottom: 5%;
+
+.jumbotron, h1 {
+	background-color: #003153;
+	color:#EEB422;
+	font-weight: bolder;
+}
+
+h5 {
+	color:#EEB422;
 }
